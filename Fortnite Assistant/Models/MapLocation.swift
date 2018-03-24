@@ -27,5 +27,4 @@ class MapLocation {
         self.ycor = ycor
     }
     
-    
 }
