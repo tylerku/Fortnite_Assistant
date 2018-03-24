@@ -13,7 +13,10 @@ class MapData: NSObject {
     
     static let sharedInstance = MapData()
     
+    let locations: [MapLocation]?
+    
     private override init(){
+        super.init()
         let anarchy = MapLocation(fromName:"Anarchy Achres", loot:6, resources:7, isolation:7, xcor:0, ycor:0)
         let dusty = MapLocation(fromName:"Dusty Depot", loot:5, resources:6, isolation:6, xcor:0, ycor:0)
         let fatal = MapLocation(fromName:"Fatal Fields", loot:6, resources:7, isolation:5, xcor:0, ycor:0)
@@ -34,7 +37,7 @@ class MapData: NSObject {
         let tomato = MapLocation(fromName:"Tomato Town", loot:2, resources:5, isolation:7, xcor:0, ycor:0)
         let wailing = MapLocation(fromName:"Wailing Woods", loot:1, resources:10, isolation:6, xcor:0, ycor:0)
         
-        let locationsArray = [anarchy, dusty, fatal, flush, greasy, haunted, junk, lonely, loot, lucky, moisty, pleasant, retail, salty, shifty, snobby, tilted, tomato, wailing]
+        self.locationsArray = [anarchy, dusty, fatal, flush, greasy, haunted, junk, lonely, loot, lucky, moisty, pleasant, retail, salty, shifty, snobby, tilted, tomato, wailing]
         
     }
     
