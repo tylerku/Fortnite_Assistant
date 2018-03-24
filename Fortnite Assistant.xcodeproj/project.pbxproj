@@ -12,6 +12,8 @@
 		4094C6F72065C8B7006C70D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4094C6F52065C8B7006C70D0 /* Main.storyboard */; };
 		4094C6F92065C8B7006C70D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4094C6F82065C8B7006C70D0 /* Assets.xcassets */; };
 		4094C6FC2065C8B7006C70D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4094C6FA2065C8B7006C70D0 /* LaunchScreen.storyboard */; };
+		B41C0ED12065D55700E734C2 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41C0ED02065D55700E734C2 /* LocationModel.swift */; };
+		B41C0ED32065D7D600E734C2 /* MapLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41C0ED22065D7D600E734C2 /* MapLocations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		4094C6F82065C8B7006C70D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4094C6FB2065C8B7006C70D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4094C6FD2065C8B7006C70D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B41C0ED02065D55700E734C2 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		B41C0ED22065D7D600E734C2 /* MapLocations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +60,22 @@
 			children = (
 				4094C6F12065C8B7006C70D0 /* AppDelegate.swift */,
 				4094C6F32065C8B7006C70D0 /* ViewController.swift */,
+				B41C0ED42065D7DE00E734C2 /* Models */,
 				4094C6F52065C8B7006C70D0 /* Main.storyboard */,
 				4094C6F82065C8B7006C70D0 /* Assets.xcassets */,
 				4094C6FA2065C8B7006C70D0 /* LaunchScreen.storyboard */,
 				4094C6FD2065C8B7006C70D0 /* Info.plist */,
 			);
 			path = "Fortnite Assistant";
+			sourceTree = "<group>";
+		};
+		B41C0ED42065D7DE00E734C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B41C0ED02065D55700E734C2 /* LocationModel.swift */,
+				B41C0ED22065D7D600E734C2 /* MapLocations.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +151,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4094C6F42065C8B7006C70D0 /* ViewController.swift in Sources */,
+				B41C0ED12065D55700E734C2 /* LocationModel.swift in Sources */,
 				4094C6F22065C8B7006C70D0 /* AppDelegate.swift in Sources */,
+				B41C0ED32065D7D600E734C2 /* MapLocations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +291,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3GSL3S66B2;
+				DEVELOPMENT_TEAM = P7G6MTMP3S;
 				INFOPLIST_FILE = "Fortnite Assistant/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tyudy.Fortnite-Assistant";
@@ -290,7 +306,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3GSL3S66B2;
+				DEVELOPMENT_TEAM = P7G6MTMP3S;
 				INFOPLIST_FILE = "Fortnite Assistant/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tyudy.Fortnite-Assistant";
