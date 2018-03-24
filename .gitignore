@@ -6,6 +6,9 @@
 build/
 DerivedData/
 
+#CUSTOM
+Fortnite\ Assistant.xcodeproj/project.pbxproj
+
 ## Various settings
 *.pbxuser
 !default.pbxuser
