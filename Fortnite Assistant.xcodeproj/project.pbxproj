@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		4094C6F22065C8B7006C70D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094C6F12065C8B7006C70D0 /* AppDelegate.swift */; };
-		4094C6F42065C8B7006C70D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094C6F32065C8B7006C70D0 /* ViewController.swift */; };
+		4094C6F42065C8B7006C70D0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094C6F32065C8B7006C70D0 /* HomeViewController.swift */; };
 		4094C6F72065C8B7006C70D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4094C6F52065C8B7006C70D0 /* Main.storyboard */; };
 		4094C6F92065C8B7006C70D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4094C6F82065C8B7006C70D0 /* Assets.xcassets */; };
 		4094C6FC2065C8B7006C70D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4094C6FA2065C8B7006C70D0 /* LaunchScreen.storyboard */; };
+		4094C7042065E4AA006C70D0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094C7032065E4AA006C70D0 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4094C6EE2065C8B7006C70D0 /* Fortnite Assistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fortnite Assistant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4094C6F12065C8B7006C70D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4094C6F32065C8B7006C70D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4094C6F32065C8B7006C70D0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4094C6F62065C8B7006C70D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4094C6F82065C8B7006C70D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4094C6FB2065C8B7006C70D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4094C6FD2065C8B7006C70D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4094C7032065E4AA006C70D0 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				4094C6F12065C8B7006C70D0 /* AppDelegate.swift */,
-				4094C6F32065C8B7006C70D0 /* ViewController.swift */,
+				4094C6F32065C8B7006C70D0 /* HomeViewController.swift */,
 				4094C6F52065C8B7006C70D0 /* Main.storyboard */,
 				4094C6F82065C8B7006C70D0 /* Assets.xcassets */,
 				4094C6FA2065C8B7006C70D0 /* LaunchScreen.storyboard */,
 				4094C6FD2065C8B7006C70D0 /* Info.plist */,
+				4094C7032065E4AA006C70D0 /* MapViewController.swift */,
 			);
 			path = "Fortnite Assistant";
 			sourceTree = "<group>";
@@ -136,7 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4094C6F42065C8B7006C70D0 /* ViewController.swift in Sources */,
+				4094C6F42065C8B7006C70D0 /* HomeViewController.swift in Sources */,
+				4094C7042065E4AA006C70D0 /* MapViewController.swift in Sources */,
 				4094C6F22065C8B7006C70D0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
