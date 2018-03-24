@@ -13,7 +13,7 @@ class MapData: NSObject {
     
     static let sharedInstance = MapData()
     
-    let locations: [MapLocation]?
+    var locationsArray: [MapLocation]?
     
     private override init(){
         super.init()

@@ -12,7 +12,11 @@ import UIKit
 class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do stuff...
+        
+        let locations = MapData.sharedInstance.locationsArray
+        for location in locations! {
+            print(location.name)
+        }
         
     }
 }
