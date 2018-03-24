@@ -8,9 +8,12 @@
 
 import Foundation
 
-class MapData {
+
+class MapData: NSObject {
     
-    init(){
+    static let sharedInstance = MapData()
+    
+    private override init(){
         let anarchy = MapLocation(fromName:"Anarchy Achres", loot:6, resources:7, isolation:7, xcor:0, ycor:0)
         let dusty = MapLocation(fromName:"Dusty Depot", loot:5, resources:6, isolation:6, xcor:0, ycor:0)
         let fatal = MapLocation(fromName:"Fatal Fields", loot:6, resources:7, isolation:5, xcor:0, ycor:0)
