@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40259C9B2069FAE000476B2E /* MapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40259C9A2069FAE000476B2E /* MapViewDelegate.swift */; };
 		4094C6F22065C8B7006C70D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094C6F12065C8B7006C70D0 /* AppDelegate.swift */; };
 		4094C6F72065C8B7006C70D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4094C6F52065C8B7006C70D0 /* Main.storyboard */; };
 		4094C6F92065C8B7006C70D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4094C6F82065C8B7006C70D0 /* Assets.xcassets */; };
@@ -15,11 +16,12 @@
 		4094C70A2065E716006C70D0 /* MapData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094C7082065E715006C70D0 /* MapData.swift */; };
 		4094C70B2065E716006C70D0 /* MapLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094C7092065E716006C70D0 /* MapLocation.swift */; };
 		4094C70D2065E731006C70D0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094C70C2065E730006C70D0 /* MapViewController.swift */; };
-		40C850F82069A29900DF4728 /* MapDrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C850F72069A29900DF4728 /* MapDrawerView.swift */; };
+		40C850F82069A29900DF4728 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C850F72069A29900DF4728 /* MapView.swift */; };
 		40D06AAC2068BBDB00A97CB9 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D06AAB2068BBDB00A97CB9 /* Line.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40259C9A2069FAE000476B2E /* MapViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewDelegate.swift; sourceTree = "<group>"; };
 		4094C6EE2065C8B7006C70D0 /* Fortnite Assistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fortnite Assistant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4094C6F12065C8B7006C70D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4094C6F62065C8B7006C70D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -30,7 +32,7 @@
 		4094C7082065E715006C70D0 /* MapData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapData.swift; sourceTree = "<group>"; };
 		4094C7092065E716006C70D0 /* MapLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLocation.swift; sourceTree = "<group>"; };
 		4094C70C2065E730006C70D0 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		40C850F72069A29900DF4728 /* MapDrawerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDrawerView.swift; sourceTree = "<group>"; };
+		40C850F72069A29900DF4728 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		40D06AAB2068BBDB00A97CB9 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40259C9C2069FAE600476B2E /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				40259C9A2069FAE000476B2E /* MapViewDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
 		4094C6E52065C8B7006C70D0 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +74,7 @@
 		4094C6F02065C8B7006C70D0 /* Fortnite Assistant */ = {
 			isa = PBXGroup;
 			children = (
+				40259C9C2069FAE600476B2E /* Delegates */,
 				40C850F62069A13200DF4728 /* ViewControllers */,
 				40D06AA82068B99100A97CB9 /* Views */,
 				4094C70E2065E766006C70D0 /* Models */,
@@ -99,7 +110,7 @@
 		40D06AA82068B99100A97CB9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				40C850F72069A29900DF4728 /* MapDrawerView.swift */,
+				40C850F72069A29900DF4728 /* MapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -178,8 +189,9 @@
 			files = (
 				4094C70B2065E716006C70D0 /* MapLocation.swift in Sources */,
 				4094C7072065E6F9006C70D0 /* HomeViewController.swift in Sources */,
-				40C850F82069A29900DF4728 /* MapDrawerView.swift in Sources */,
+				40C850F82069A29900DF4728 /* MapView.swift in Sources */,
 				4094C6F22065C8B7006C70D0 /* AppDelegate.swift in Sources */,
+				40259C9B2069FAE000476B2E /* MapViewDelegate.swift in Sources */,
 				4094C70A2065E716006C70D0 /* MapData.swift in Sources */,
 				4094C70D2065E731006C70D0 /* MapViewController.swift in Sources */,
 				40D06AAC2068BBDB00A97CB9 /* Line.swift in Sources */,

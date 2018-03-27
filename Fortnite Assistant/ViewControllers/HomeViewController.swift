@@ -23,7 +23,6 @@ class HomeViewController: UIViewController {
     }
     
     func setup(){
-        // startButton.layer.backgroundColor = UIColor.white.cgColor
         startButton.layer.cornerRadius = CGFloat(35)
     }
 

@@ -10,11 +10,12 @@ import Foundation
 import UIKit
 import CoreGraphics
 
-class MapDrawerView: UIView {
+class MapView: UIView {
     
-    var route: Line?
-    var drawn = false
-    var shapeLayer: CAShapeLayer?
+    private var route: Line?
+    private var drawn = false
+    private var shapeLayer: CAShapeLayer?
+    var delegate: MapViewDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -39,15 +40,17 @@ class MapDrawerView: UIView {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if drawn { return }
         route = Line()
         route?.begin = (touches.first?.location(in: self))!
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
+        if drawn { return }
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if drawn { return }
         route?.end = (touches.first?.location(in: self))!
         drawRoute()
     }
@@ -68,13 +71,14 @@ class MapDrawerView: UIView {
             if let shapeLayer = shapeLayer {
                 self.layer.addSublayer(shapeLayer)
                 drawn = true
-                print(shapeLayer.opacity)
-                print(self.alpha)
+                delegate?.routeWasDrawn()
             }
         }
     }
     
     func removeRoute(){
         self.shapeLayer?.removeFromSuperlayer()
+        self.shapeLayer = nil
+        drawn = false
     }
 }
