@@ -23,14 +23,14 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fortnite-characters" translatesAutoresizingMaskIntoConstraints="NO" id="AWO-1O-nzL">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHn-C7-cuJ">
-                                <rect key="frame" x="19" y="567" width="337.5" height="67.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHn-C7-cuJ">
+                                <rect key="frame" x="19" y="568" width="337.5" height="67.5"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="cHn-C7-cuJ" secondAttribute="height" multiplier="5:1" id="iuf-Hz-kKf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
-                                <state key="normal" title="🔥Let's Get It🔥">
+                                <state key="normal" title="Test Button">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -238,7 +238,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="fortnite-characters" width="1920" height="1200"/>
+        <image name="fortnite-characters" width="4500" height="8000"/>
         <image name="fortnite-map" width="1000" height="1000"/>
     </resources>
 </document>
