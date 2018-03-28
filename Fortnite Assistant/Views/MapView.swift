@@ -47,15 +47,11 @@ class MapView: UIView {
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         if drawn { return }
-    }
-    
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if drawn { return }
+        
+        self.shapeLayer?.removeFromSuperlayer()
+        self.shapeLayer = nil
+
         route?.end = (touches.first?.location(in: self))!
-        drawRoute()
-    }
-    
-    func drawRoute(){
         if let begin = route?.begin, let end = route?.end {
             let path = UIBezierPath()
             path.move(to: begin)
@@ -70,10 +66,20 @@ class MapView: UIView {
             
             if let shapeLayer = shapeLayer {
                 self.layer.addSublayer(shapeLayer)
-                drawn = true
-                delegate?.routeWasDrawn()
             }
         }
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if drawn { return }
+        route?.end = (touches.first?.location(in: self))!
+        drawRoute()
+    }
+    
+    func drawRoute(){
+        drawn = true
+        delegate?.routeWasDrawn()
+        
     }
     
     func removeRoute(){
