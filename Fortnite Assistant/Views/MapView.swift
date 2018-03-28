@@ -56,13 +56,15 @@ class MapView: UIView {
             let path = UIBezierPath()
             path.move(to: begin)
             path.addLine(to: end)
-            path.close()
+            
             
             shapeLayer = CAShapeLayer()
             shapeLayer?.path = path.cgPath
             shapeLayer?.fillColor = UIColor(red: 0.968627451, green: 0.8980392157, blue: 0.1450980392, alpha: 1.0).cgColor
             shapeLayer?.strokeColor = UIColor(red: 0.968627451, green: 0.8980392157, blue: 0.1450980392, alpha: 1.0).cgColor
             shapeLayer?.lineWidth = 5.0
+            shapeLayer?.lineCap = kCALineCapRound
+            path.close()
             
             if let shapeLayer = shapeLayer {
                 self.layer.addSublayer(shapeLayer)
