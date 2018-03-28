@@ -34,8 +34,8 @@ class MapView: UIView {
         imageView.contentMode = .scaleToFill
         
         imageView.frame = self.bounds
-        imageView.frame = CGRect(x: 0, y: 0, width:         (UIApplication.shared.keyWindow?.screen.bounds.width)!
-            , height: self.frame.height)
+        imageView.frame = CGRect(x: 0, y: 0, width: (UIApplication.shared.keyWindow?.screen.bounds.width)!,
+                height: self.frame.height)
         self.addSubview(imageView)
     }
     
@@ -60,8 +60,8 @@ class MapView: UIView {
             
             shapeLayer = CAShapeLayer()
             shapeLayer?.path = path.cgPath
-            shapeLayer?.fillColor = UIColor.red.cgColor
-            shapeLayer?.strokeColor = UIColor.red.cgColor
+            shapeLayer?.fillColor = UIColor.yellow.cgColor
+            shapeLayer?.strokeColor = UIColor.yellow.cgColor
             shapeLayer?.lineWidth = 5.0
             
             if let shapeLayer = shapeLayer {
