@@ -68,9 +68,18 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7FK-kz-fWN" customClass="MapView" customModule="Fortnite_Assistant" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="20" width="375" height="375"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fortnite-map" translatesAutoresizingMaskIntoConstraints="NO" id="CrR-OO-tlu">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="CrR-OO-tlu" firstAttribute="centerX" secondItem="7FK-kz-fWN" secondAttribute="centerX" id="5qX-8N-ezk"/>
                                     <constraint firstAttribute="width" secondItem="7FK-kz-fWN" secondAttribute="height" multiplier="1:1" id="H28-gM-RQE"/>
+                                    <constraint firstItem="CrR-OO-tlu" firstAttribute="centerY" secondItem="7FK-kz-fWN" secondAttribute="centerY" id="bzw-SA-MVA"/>
+                                    <constraint firstItem="CrR-OO-tlu" firstAttribute="width" secondItem="7FK-kz-fWN" secondAttribute="width" id="ve4-Lm-t2a"/>
+                                    <constraint firstItem="CrR-OO-tlu" firstAttribute="height" secondItem="7FK-kz-fWN" secondAttribute="height" id="wGG-H3-Zmu"/>
                                 </constraints>
                             </view>
                             <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="KWk-lO-jUe">
@@ -230,5 +239,6 @@
     </scenes>
     <resources>
         <image name="fortnite-characters" width="1920" height="1200"/>
+        <image name="fortnite-map" width="1000" height="1000"/>
     </resources>
 </document>

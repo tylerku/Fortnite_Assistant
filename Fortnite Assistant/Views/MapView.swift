@@ -17,28 +17,6 @@ class MapView: UIView {
     private var shapeLayer: CAShapeLayer?
     var delegate: MapViewDelegate?
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        customInit()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        customInit()
-    }
-    
-    func customInit(){
-        let imageName = "fortnite-map"
-        let image = UIImage(named: imageName)
-        let imageView = UIImageView(image: image!)
-        imageView.contentMode = .scaleToFill
-        
-        imageView.frame = self.bounds
-        imageView.frame = CGRect(x: 0, y: 0, width: (UIApplication.shared.keyWindow?.screen.bounds.width)!,
-                height: self.frame.height)
-        self.addSubview(imageView)
-    }
-    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if drawn { return }
         route = Line()
