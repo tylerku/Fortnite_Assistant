@@ -12,13 +12,13 @@ import Foundation
 class MapLocation {
     
     var name: String
-    var loot: Int
-    var resources: Int
-    var isolation: Int
+    var loot: Double
+    var resources: Double
+    var isolation: Double
     var xcor: Double
     var ycor: Double
     
-    init(fromName name: String, loot: Int, resources: Int, isolation: Int, xcor: Double, ycor: Double) {
+    init(fromName name: String, loot: Double, resources: Double, isolation: Double, xcor: Double, ycor: Double) {
         self.name = name
         self.loot = loot
         self.resources = resources
