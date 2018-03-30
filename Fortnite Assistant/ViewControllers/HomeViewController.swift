@@ -10,7 +10,8 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var determineDropBtn: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setup()
@@ -23,7 +24,8 @@ class HomeViewController: UIViewController {
     }
     
     func setup(){
-        startButton.layer.cornerRadius = CGFloat(35)
+        determineDropBtn.layer.cornerRadius = CGFloat(35)
+        determineDropBtn.imageView?.layer.cornerRadius = CGFloat(35)
     }
 
 
