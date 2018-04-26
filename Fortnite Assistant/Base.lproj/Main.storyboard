@@ -11,6 +11,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="BurbankBigCondensed-Bold.otf">
+            <string>BurbankBigCondensed-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -84,23 +89,26 @@
                                     <constraint firstAttribute="width" secondItem="7FK-kz-fWN" secondAttribute="height" multiplier="375:373" id="xKU-Lp-rtQ"/>
                                 </constraints>
                             </view>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYu-Wa-Fyg">
-                                <rect key="frame" x="191" y="552" width="145" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYu-Wa-Fyg">
+                                <rect key="frame" x="197" y="567.5" width="131" height="51.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="BurbankBigCondensed-Bold" family="Burbank Big Condensed" pointSize="45"/>
                                 <state key="normal" title="Ok">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.46188986301422119" green="0.23781394958496094" blue="0.59195148944854736" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="Vfw-gH-Imt" kind="presentation" modalPresentationStyle="overCurrentContext" id="IGq-Qd-NSC"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1e-Bf-7Ww">
-                                <rect key="frame" x="38" y="552" width="145" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1e-Bf-7Ww">
+                                <rect key="frame" x="47" y="567.5" width="131" height="51.5"/>
+                                <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Z1e-Bf-7Ww" secondAttribute="height" multiplier="145:57" id="L6N-52-wwI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BurbankBigCondensed-Bold" family="Burbank Big Condensed" pointSize="45"/>
                                 <state key="normal" title="Redo">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.46188986300000001" green="0.23781394959999999" blue="0.59195148939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="redoButtonTapped:" destination="qgg-zz-hkD" eventType="touchUpInside" id="YCM-b6-e1L"/>
@@ -109,12 +117,19 @@
                         </subviews>
                         <color key="backgroundColor" red="0.17138883469999999" green="0.20296823980000001" blue="0.25698333979999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="lYu-Wa-Fyg" firstAttribute="width" secondItem="Z1e-Bf-7Ww" secondAttribute="width" id="0F1-3d-Ldv"/>
                             <constraint firstItem="0Nv-bB-MoS" firstAttribute="centerX" secondItem="pYf-78-IBr" secondAttribute="centerX" id="2Yc-Px-4bd"/>
+                            <constraint firstItem="lYu-Wa-Fyg" firstAttribute="centerY" secondItem="Z1e-Bf-7Ww" secondAttribute="centerY" id="78i-3c-8o0"/>
                             <constraint firstItem="7FK-kz-fWN" firstAttribute="centerY" secondItem="Y2b-Rh-mFC" secondAttribute="centerY" multiplier="0.98" id="GUz-FE-8QI"/>
                             <constraint firstItem="7FK-kz-fWN" firstAttribute="width" secondItem="Y2b-Rh-mFC" secondAttribute="width" id="OTb-Kg-0tJ"/>
+                            <constraint firstItem="lYu-Wa-Fyg" firstAttribute="height" secondItem="Z1e-Bf-7Ww" secondAttribute="height" id="OjG-c1-X4R"/>
                             <constraint firstItem="0Nv-bB-MoS" firstAttribute="centerY" secondItem="pYf-78-IBr" secondAttribute="centerY" id="SWU-3w-uV1"/>
+                            <constraint firstItem="lYu-Wa-Fyg" firstAttribute="centerX" secondItem="Y2b-Rh-mFC" secondAttribute="centerX" multiplier="1.4" id="T6v-Ce-77K"/>
                             <constraint firstItem="7FK-kz-fWN" firstAttribute="centerX" secondItem="Y2b-Rh-mFC" secondAttribute="centerX" id="Xoy-UE-b53"/>
+                            <constraint firstItem="Z1e-Bf-7Ww" firstAttribute="centerX" secondItem="Y2b-Rh-mFC" secondAttribute="centerX" multiplier="0.6" id="Y0i-Pj-z4f"/>
                             <constraint firstItem="0Nv-bB-MoS" firstAttribute="height" secondItem="pYf-78-IBr" secondAttribute="height" id="buE-2f-hA1"/>
+                            <constraint firstItem="Z1e-Bf-7Ww" firstAttribute="top" secondItem="0Nv-bB-MoS" secondAttribute="bottom" multiplier="0.85" id="kJC-Qm-Cyb"/>
+                            <constraint firstItem="Z1e-Bf-7Ww" firstAttribute="width" secondItem="0Nv-bB-MoS" secondAttribute="width" multiplier="0.35" id="wYZ-99-2Aa"/>
                             <constraint firstItem="0Nv-bB-MoS" firstAttribute="width" secondItem="Y2b-Rh-mFC" secondAttribute="width" id="yJB-QF-R7O"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pYf-78-IBr"/>

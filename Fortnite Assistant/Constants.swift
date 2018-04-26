@@ -7,6 +7,10 @@
 //
 
 import Foundation
+import UIKit
 
 // Nibs
 let PREFERENCES_MODAL_NIB = "PreferencesModal"
+
+// Number Constants
+let CORNER_RADIUS = CGFloat(15)

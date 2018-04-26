@@ -58,9 +58,10 @@ class PreferencesModal: UIView {
     }
     
     private func roundUIElementEdges(){
-        dropButton.layer.cornerRadius = cornerRadius
-        dropButton.imageView?.layer.cornerRadius = cornerRadius
-        self.layer.cornerRadius = cornerRadius
+        dropButton.layer.cornerRadius = CORNER_RADIUS
+
+        dropButton.imageView?.layer.cornerRadius = CORNER_RADIUS
+        self.layer.cornerRadius = CORNER_RADIUS
         self.layer.masksToBounds = true
     }
 }

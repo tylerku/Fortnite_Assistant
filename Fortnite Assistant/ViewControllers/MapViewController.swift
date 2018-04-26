@@ -25,6 +25,7 @@ class MapViewController: UIViewController, MapViewDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         UIApplication.shared.statusBarStyle = .lightContent
+        roundButtonEdges()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -48,5 +49,10 @@ class MapViewController: UIViewController, MapViewDelegate {
     
     private func removeRoute(){
         mapView.removeRoute()
+    }
+    
+    private func roundButtonEdges(){
+        okButton.layer.cornerRadius = CORNER_RADIUS
+        redoButton.layer.cornerRadius = CORNER_RADIUS
     }
 }
