@@ -10,18 +10,12 @@ import Foundation
 import UIKit
 
 class MapViewController: UIViewController, MapViewDelegate {
-    func routeWasDrawn() {
-        //...
-    }
-    
-    
+   
    
     @IBOutlet weak var mapView: MapView!
-//    @IBOutlet weak var redoButton: UIButton!
-//    @IBOutlet weak var okButton: UIButton!
-//    @IBOutlet weak var buttonsStackView: UIStackView!
-    
-//    @IBOutlet weak var dropButton: UIButton!
+    @IBOutlet weak var okButton: UIButton!
+    @IBOutlet weak var redoButton: UIButton!
+ 
     // MARK: - ViewController Functions
     
     override func viewDidLoad() {
@@ -29,13 +23,30 @@ class MapViewController: UIViewController, MapViewDelegate {
         mapView.delegate = self
     }
     
-    // MARK: - Actions
+    override func viewWillAppear(_ animated: Bool) {
+        UIApplication.shared.statusBarStyle = .lightContent
+    }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        UIApplication.shared.statusBarStyle = .default
+    }
+    
+    // MARK: - MapViewDelegate functions
 
+    func routeWasDrawn() {
+        okButton.isHidden = false
+        redoButton.isHidden = false
+    }
     
+    // MARK: - Action
     
+    @IBAction func redoButtonTapped(_ sender: UIButton) {
+        removeRoute()
+    }
     
+    // MARK: - helpers
     
-    
-      
+    private func removeRoute(){
+        mapView.removeRoute()
+    }
 }

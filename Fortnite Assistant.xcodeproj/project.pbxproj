@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		4023256E206B09E000A045E8 /* MapCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4023256D206B09E000A045E8 /* MapCalculator.swift */; };
 		40259C9B2069FAE000476B2E /* MapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40259C9A2069FAE000476B2E /* MapViewDelegate.swift */; };
+		406B2D0B2082848500F47B9D /* BurbankBigCondensed-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 406B2D0A2082848500F47B9D /* BurbankBigCondensed-Bold.otf */; };
+		407C6D8D208138460044671A /* PreferencesModal.xib in Resources */ = {isa = PBXBuildFile; fileRef = 407C6D8C208138460044671A /* PreferencesModal.xib */; };
+		407C6D8F208138BD0044671A /* PreferencesModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C6D8E208138BD0044671A /* PreferencesModal.swift */; };
 		4094C6F22065C8B7006C70D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094C6F12065C8B7006C70D0 /* AppDelegate.swift */; };
 		4094C6F72065C8B7006C70D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4094C6F52065C8B7006C70D0 /* Main.storyboard */; };
 		4094C6F92065C8B7006C70D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4094C6F82065C8B7006C70D0 /* Assets.xcassets */; };
@@ -19,11 +22,18 @@
 		4094C70D2065E731006C70D0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094C70C2065E730006C70D0 /* MapViewController.swift */; };
 		40C850F82069A29900DF4728 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C850F72069A29900DF4728 /* MapView.swift */; };
 		40D06AAC2068BBDB00A97CB9 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D06AAB2068BBDB00A97CB9 /* Line.swift */; };
+		40E824D720813BD40002D100 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E824D620813BD40002D100 /* Constants.swift */; };
+		40E824D920813F380002D100 /* UIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E824D820813F380002D100 /* UIUtils.swift */; };
+		40EEDA70209151F200F6C0B6 /* PreferencesModalDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EEDA6F209151F200F6C0B6 /* PreferencesModalDelegate.swift */; };
+		40EEDA722091523B00F6C0B6 /* PreferencesModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EEDA712091523B00F6C0B6 /* PreferencesModalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4023256D206B09E000A045E8 /* MapCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCalculator.swift; sourceTree = "<group>"; };
 		40259C9A2069FAE000476B2E /* MapViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewDelegate.swift; sourceTree = "<group>"; };
+		406B2D0A2082848500F47B9D /* BurbankBigCondensed-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BurbankBigCondensed-Bold.otf"; sourceTree = "<group>"; };
+		407C6D8C208138460044671A /* PreferencesModal.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferencesModal.xib; sourceTree = "<group>"; };
+		407C6D8E208138BD0044671A /* PreferencesModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesModal.swift; sourceTree = "<group>"; };
 		4094C6EE2065C8B7006C70D0 /* Fortnite Assistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fortnite Assistant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4094C6F12065C8B7006C70D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4094C6F62065C8B7006C70D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -36,6 +46,10 @@
 		4094C70C2065E730006C70D0 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		40C850F72069A29900DF4728 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		40D06AAB2068BBDB00A97CB9 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		40E824D620813BD40002D100 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		40E824D820813F380002D100 /* UIUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtils.swift; sourceTree = "<group>"; };
+		40EEDA6F209151F200F6C0B6 /* PreferencesModalDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesModalDelegate.swift; sourceTree = "<group>"; };
+		40EEDA712091523B00F6C0B6 /* PreferencesModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesModalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				4023256D206B09E000A045E8 /* MapCalculator.swift */,
+				40E824D820813F380002D100 /* UIUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -61,8 +76,17 @@
 			isa = PBXGroup;
 			children = (
 				40259C9A2069FAE000476B2E /* MapViewDelegate.swift */,
+				40EEDA6F209151F200F6C0B6 /* PreferencesModalDelegate.swift */,
 			);
 			path = Delegates;
+			sourceTree = "<group>";
+		};
+		406B2D0C208284D400F47B9D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				406B2D0A2082848500F47B9D /* BurbankBigCondensed-Bold.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		4094C6E52065C8B7006C70D0 = {
@@ -84,6 +108,7 @@
 		4094C6F02065C8B7006C70D0 /* Fortnite Assistant */ = {
 			isa = PBXGroup;
 			children = (
+				406B2D0C208284D400F47B9D /* Fonts */,
 				4023256C206B09C900A045E8 /* Utils */,
 				40259C9C2069FAE600476B2E /* Delegates */,
 				40C850F62069A13200DF4728 /* ViewControllers */,
@@ -94,6 +119,7 @@
 				4094C6F82065C8B7006C70D0 /* Assets.xcassets */,
 				4094C6FA2065C8B7006C70D0 /* LaunchScreen.storyboard */,
 				4094C6FD2065C8B7006C70D0 /* Info.plist */,
+				40E824D620813BD40002D100 /* Constants.swift */,
 			);
 			path = "Fortnite Assistant";
 			sourceTree = "<group>";
@@ -114,6 +140,7 @@
 			children = (
 				4094C70C2065E730006C70D0 /* MapViewController.swift */,
 				4094C7062065E6F9006C70D0 /* HomeViewController.swift */,
+				40EEDA712091523B00F6C0B6 /* PreferencesModalViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -122,6 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				40C850F72069A29900DF4728 /* MapView.swift */,
+				407C6D8C208138460044671A /* PreferencesModal.xib */,
+				407C6D8E208138BD0044671A /* PreferencesModal.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,6 +214,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				407C6D8D208138460044671A /* PreferencesModal.xib in Resources */,
+				406B2D0B2082848500F47B9D /* BurbankBigCondensed-Bold.otf in Resources */,
 				4094C6FC2065C8B7006C70D0 /* LaunchScreen.storyboard in Resources */,
 				4094C6F92065C8B7006C70D0 /* Assets.xcassets in Resources */,
 				4094C6F72065C8B7006C70D0 /* Main.storyboard in Resources */,
@@ -198,7 +229,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				407C6D8F208138BD0044671A /* PreferencesModal.swift in Sources */,
+				40E824D720813BD40002D100 /* Constants.swift in Sources */,
 				4094C70B2065E716006C70D0 /* MapLocation.swift in Sources */,
+				40EEDA70209151F200F6C0B6 /* PreferencesModalDelegate.swift in Sources */,
+				40E824D920813F380002D100 /* UIUtils.swift in Sources */,
+				40EEDA722091523B00F6C0B6 /* PreferencesModalViewController.swift in Sources */,
 				4094C7072065E6F9006C70D0 /* HomeViewController.swift in Sources */,
 				40C850F82069A29900DF4728 /* MapView.swift in Sources */,
 				4094C6F22065C8B7006C70D0 /* AppDelegate.swift in Sources */,
